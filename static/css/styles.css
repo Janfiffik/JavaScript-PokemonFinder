@@ -1,0 +1,117 @@
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+  
+  #search-input {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #3b4cca;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  #search-input:focus {
+    border-color: #ffcb05; /* Yellow on focus */
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ffcb05;
+    color: #3b4cca;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  #search-button:hover {
+    background-color: #f0b000; /* Slightly darker yellow on hover */
+    transform: translateY(-2px); /* Small lift effect on hover */
+  }
+  
+  #search-button:active {
+    transform: translateY(0); /* Reset position on click */
+  }
+  
+  #pokemon-info {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    border: 3px solid #ffcb05;
+  }
+  
+  #pokemon-image {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px solid #3b4cca;
+  }
+  
+  #pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b4cca;
+    margin-top: 10px;
+  }
+  
+  #pokemon-id {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  #types {
+    margin-top: 10px;
+  }
+  
+  #types span {
+    background-color: #ffcb05;
+    color: #3b4cca;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  #pokemon-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #hp, #attack, #defense, #special-attack, #special-defense, #speed {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  #pokemon-info p span {
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  /* Card Hover Effect */
+  #pokemon-info:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Finder</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <main>
+        <input id="search-input" type="text">
+        <button id="search-button">Find your Pokemon</button>
+
+        <div id="pokemon-info">
+          <div id="pokemon-image"></div>
+          <p id="pokemon-name"></p>
+          <p id="pokemon-id"></p>
+          <p id="weight" ></p>
+          <p id="height" ></p>
+          <div id="types" ></div>
+          <p id="hp" ></p>
+          <p id="attack" ></p>
+          <p id="defense" ></p>
+          <p id="special-attack"></p>
+          <p id="special-defense"></p>
+          <p id="speed" ></p>
+        </div>
+        
+    </main>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
